@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator">
+        <input type="text" id="display" disabled />
+        <section class="buttons">
+          <div class="buttons-row top-right">
+            <button type="button" class="key" onclick="appendToDisplay('(')">(</button>
+            <button type="button" class="key" onclick="appendToDisplay(')')">)</button>
+            </button>
+            <button type="button" class="key" onclick="clearDisplay()">C</button>
+            <button type="button" class="key right-operator" onclick="backspace()">&larr;</button>
+          </div>
+
+          <div class="buttons-row">
+            <button type="button" class="key" onclick="appendToDisplay('7')">
+              7
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('8')">
+              8
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('9')">
+              9
+            </button>
+            <button type="button" class="key right-operator" onclick="appendToDisplay('+')">
+              +
+            </button>
+          </div>
+          <div class="buttons-row">
+            <button type="button" class="key" onclick="appendToDisplay('4')">
+              4
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('5')">
+              5
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('6')">
+              6
+            </button>
+            <button type="button" class="key right-operator" onclick="appendToDisplay('-')">
+              -
+            </button>
+          </div>
+          <div class="buttons-row">
+            <button type="button" class="key" onclick="appendToDisplay('1')">
+              1
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('2')">
+              2
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('3')">
+              3
+            </button>
+            <button type="button" class="key right-operator" onclick="appendToDisplay('*')">
+              &times;
+            </button>
+          </div>
+          <div class="buttons-row">
+            <button type="button" class="key" onclick="appendToDisplay('.')">
+              .
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('0')">
+              0
+            </button>
+            <button type="button" class="key" onclick="appendToDisplay('/')">
+              /
+            </button>
+            <button type="button" class="key right-operator" onclick="calculateResult()">=</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
